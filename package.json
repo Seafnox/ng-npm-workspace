@@ -1,0 +1,23 @@
+{
+  "name": "@ng-npm-workspace",
+  "version": "1.0.0",
+  "description": "npm workspace monorepo example",
+  "scripts": {
+    "test": "npm test --workspaces"
+  },
+  "keywords": [
+    "npm",
+    "workspace",
+    "monorepo"
+  ],
+  "author": "Kirill Warp",
+  "license": "ISC",
+  "workspaces": [
+    "./apps/*",
+    "./libs/*"
+  ],
+  "peerDependencies": {
+    "npm": ">= 7",
+    "node": ">= 14"
+  }
+}
