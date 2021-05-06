@@ -1,7 +1,8 @@
 {
   "extends": "tslint:recommended",
   "rulesDirectory": [
-    "codelyzer"
+    "codelyzer",
+    "rxjs-tslint-rules"
   ],
   "rules": {
     "align": {
@@ -10,7 +11,7 @@
         "statements"
       ]
     },
-    "array-type": false,
+    "array-type": true,
     "arrow-return-shorthand": true,
     "curly": true,
     "deprecation": {
@@ -24,10 +25,11 @@
     "import-spacing": true,
     "indent": {
       "options": [
-        "spaces"
+        "spaces",
+        4
       ]
     },
-    "max-classes-per-file": false,
+    "max-classes-per-file": [true, 1],
     "max-line-length": [
       true,
       140
@@ -35,23 +37,19 @@
     "member-ordering": [
       true,
       {
-        "order": [
-          "static-field",
-          "instance-field",
-          "static-method",
-          "instance-method"
-        ]
+        "order": "instance-sandwich"
       }
     ],
     "no-console": [
       true,
+      "warn",
+      "log",
       "debug",
       "info",
       "time",
       "timeEnd",
       "trace"
     ],
-    "no-empty": false,
     "no-inferrable-types": [
       true,
       "ignore-params"
@@ -59,7 +57,7 @@
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
-    "no-var-requires": false,
+    "no-var-requires": true,
     "object-literal-key-quotes": [
       true,
       "as-needed"
@@ -138,14 +136,14 @@
     "use-pipe-transform-interface": true,
     "directive-selector": [
       true,
-      "attribute",
-      "app",
+      ["element", "attribute"],
+      ["ng", "ngx"],
       "camelCase"
     ],
     "component-selector": [
       true,
-      "element",
-      "app",
+      ["element", "attribute"],
+      ["ng", "ngx", ""],
       "kebab-case"
     ]
   }
