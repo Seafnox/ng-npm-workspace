@@ -2,8 +2,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "outDir": "./out-tsc/app",
     "types": []
+  },
+  "paths": {
+    "@ng-npm7-example/table": [ "dist/libs/table" ]
   },
   "files": [
     "src/main.ts",

@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core';
-import { TableComponent } from './table.component';
-
-
+import {NgModule} from '@angular/core';
+import {TableComponent} from './table.component';
 
 @NgModule({
   declarations: [
     TableComponent
   ],
-  imports: [
-  ],
+  imports: [],
   exports: [
     TableComponent
   ]
 })
-export class TableModule { }
+export class TableModule {}

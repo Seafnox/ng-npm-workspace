@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -13,10 +13,7 @@
     "target": "es2015",
     "module": "es2020",
     "paths": {
-      "table": [
-        "dist/table/table",
-        "dist/table"
-      ]
+      "@ng-npm7-example/table": [ "libs/table/src/public_api.ts" ]
     },
     "lib": [
       "es2018",
