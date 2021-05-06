@@ -12,7 +12,7 @@
       },
       "root": "projects/dashboard",
       "sourceRoot": "projects/dashboard/src",
-      "prefix": "app",
+      "prefix": "dashboard",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -125,36 +125,36 @@
     },
     "table": {
       "projectType": "library",
-      "root": "projects/table",
-      "sourceRoot": "projects/table/src",
-      "prefix": "lib",
+      "root": "libs/table",
+      "sourceRoot": "libs/table/src",
+      "prefix": "table",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/table/tsconfig.lib.json",
-            "project": "projects/table/ng-package.json"
+            "tsConfig": "libs/table/tsconfig.lib.json",
+            "project": "libs/table/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/table/tsconfig.lib.prod.json"
+              "tsConfig": "libs/table/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/table/src/test.ts",
-            "tsConfig": "projects/table/tsconfig.spec.json",
-            "karmaConfig": "projects/table/karma.conf.js"
+            "main": "libs/table/src/test.ts",
+            "tsConfig": "libs/table/tsconfig.spec.json",
+            "karmaConfig": "libs/table/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/table/tsconfig.lib.json",
-              "projects/table/tsconfig.spec.json"
+              "libs/table/tsconfig.lib.json",
+              "libs/table/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
