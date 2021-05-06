@@ -7,5 +7,6 @@
     "test": "ng test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
