@@ -11,9 +11,24 @@
         "statements"
       ]
     },
-    "array-type": true,
+    "array-type": [true, "array"],
     "arrow-return-shorthand": true,
+    "component-class-suffix": true,
+    "contextual-lifecycle": true,
     "curly": true,
+    "component-selector": [
+      true,
+      ["element", "attribute"],
+      ["ng", "ngx", ""],
+      "kebab-case"
+    ],
+    "directive-class-suffix": true,
+    "directive-selector": [
+      true,
+      ["element", "attribute"],
+      ["ng", "ngx"],
+      "camelCase"
+    ],
     "deprecation": {
       "severity": "warning"
     },
@@ -40,6 +55,9 @@
         "order": "instance-sandwich"
       }
     ],
+    "no-any": true,
+    "no-empty": false,
+    "no-conflicting-lifecycle": true,
     "no-console": [
       true,
       "warn",
@@ -50,11 +68,18 @@
       "timeEnd",
       "trace"
     ],
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
     "no-non-null-assertion": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-var-requires": true,
@@ -80,6 +105,8 @@
         "named": "never"
       }
     },
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
     "typedef": [
       true,
       "call-signature"
@@ -102,6 +129,8 @@
         }
       ]
     },
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
     "variable-name": {
       "options": [
         "ban-keywords",
@@ -118,33 +147,6 @@
         "check-type",
         "check-typecast"
       ]
-    },
-    "component-class-suffix": true,
-    "contextual-lifecycle": true,
-    "directive-class-suffix": true,
-    "no-conflicting-lifecycle": true,
-    "no-host-metadata-property": true,
-    "no-input-rename": true,
-    "no-inputs-metadata-property": true,
-    "no-output-native": true,
-    "no-output-on-prefix": true,
-    "no-output-rename": true,
-    "no-outputs-metadata-property": true,
-    "template-banana-in-box": true,
-    "template-no-negated-async": true,
-    "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true,
-    "directive-selector": [
-      true,
-      ["element", "attribute"],
-      ["ng", "ngx"],
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      ["element", "attribute"],
-      ["ng", "ngx", ""],
-      "kebab-case"
-    ]
+    }
   }
 }
