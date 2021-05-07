@@ -12,6 +12,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "noUnusedLocals": true,
+    "pretty": true, /* Окрашивать в терминале сообщения об ошибках. */
+    "removeComments": true, /* Удалить все комментарии из итогового файла. */
+    "strict": true, /* Включить ли все строги проверки типов сразу: noImplicitAny, noImplicitThis, alwaysStrict, strictNullChecks, strictFunctionTypes, strictPropertyInitialization? */
+    "strictNullChecks": true, /* Значения "null" и "undefined" могут быть присвоены только значениям данного типа и значениям только с типом "any"? */
+    "traceResolution": false, /* Выводить в логи сообщения о нахождении путей до модулей. */
     "paths": {
       "@ng-npm7-example/table": [ "libs/table/src/public_api.ts" ]
     },
