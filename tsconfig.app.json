@@ -8,12 +8,5 @@
   },
   "paths": {
     "@ng-npm7-example/table": [ "dist/libs/table" ]
-  },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  }
 }

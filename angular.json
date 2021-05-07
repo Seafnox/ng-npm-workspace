@@ -45,7 +45,7 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -65,7 +65,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dashboard:build"
+            "browserTarget": "dashboard:build",
+            "open": true
           },
           "configurations": {
             "production": {
@@ -133,7 +134,7 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "libs/table/tsconfig.lib.json",
-            "project": "libs/table/ng-package.json"
+            "project": "libs/table/package.json"
           },
           "configurations": {
             "production": {
