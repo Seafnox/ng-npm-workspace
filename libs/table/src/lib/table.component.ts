@@ -6,6 +6,9 @@ import {Component, OnInit} from '@angular/core';
     <p>
       table works!
     </p>
+    <div>
+      <ng-content></ng-content>
+    </div>
   `,
   styles: []
 })
