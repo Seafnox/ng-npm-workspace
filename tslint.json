@@ -91,11 +91,7 @@
       true,
       "single"
     ],
-    "semicolon": {
-      "options": [
-        "always"
-      ]
-    },
+    "semicolon": [true, "always"],
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
@@ -129,6 +125,7 @@
         }
       ]
     },
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true,
     "variable-name": {
