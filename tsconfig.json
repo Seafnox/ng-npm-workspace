@@ -19,7 +19,12 @@
     "strictNullChecks": true, /* Значения "null" и "undefined" могут быть присвоены только значениям данного типа и значениям только с типом "any"? */
     "traceResolution": false, /* Выводить в логи сообщения о нахождении путей до модулей. */
     "paths": {
-      "@ng-npm7-example/table": [ "libs/table/src/public_api.ts" ]
+      "@ng-npm7-example/table": [
+        "libs/table/src/public_api.ts"
+      ],
+      "@ng-npm7-example/auth": [
+        "libs/auth/src/public_api.ts"
+      ]
     },
     "lib": [
       "es2018",

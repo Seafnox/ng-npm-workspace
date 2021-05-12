@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { AuthComponent } from 'libs/auth/src/lib/auth.component';
 
-
-
 @NgModule({
   declarations: [
-    AuthComponent
+    AuthComponent,
   ],
-  imports: [
-  ],
+  imports: [],
   exports: [
-    AuthComponent
-  ]
+    AuthComponent,
+  ],
 })
-export class AuthModule { }
+export class AuthModule {
+}

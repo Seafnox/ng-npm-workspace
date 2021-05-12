@@ -7,6 +7,7 @@
     "types": []
   },
   "paths": {
-    "@ng-npm7-example/table": [ "dist/libs/table" ]
+    "@ng-npm7-example/table": [ "dist/libs/table" ],
+    "@ng-npm7-example/auth": [ "dist/libs/auth" ]
   }
 }
