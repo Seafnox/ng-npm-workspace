@@ -10,5 +10,4 @@ import { AuthComponent } from 'libs/auth/src/lib/auth.component';
     AuthComponent,
   ],
 })
-export class AuthModule {
-}
+export class AuthModule {}

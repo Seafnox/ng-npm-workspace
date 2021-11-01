@@ -6,14 +6,15 @@ import { TableModule } from '@ng-npm7-example/table';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        TableModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    TableModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

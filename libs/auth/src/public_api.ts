@@ -2,5 +2,5 @@
  * Public API Surface of auth
  */
 
-export * from 'libs/auth/src/lib/auth.component';
-export * from 'libs/auth/src/lib/auth.module';
+export * from './lib/auth.component';
+export * from './lib/auth.module';

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-table',
@@ -10,7 +10,7 @@ import {Component, OnInit} from '@angular/core';
       <ng-content></ng-content>
     </div>
   `,
-  styles: []
+  styles: [],
 })
 export class TableComponent implements OnInit {
   constructor() {}
