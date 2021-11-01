@@ -1,10 +1,10 @@
-const baseConfig = require('../../jest.config');
+const baseConfig = require('../../jest.config.js');
 
 module.exports = {
   ...baseConfig,
   globals: {
     'ts-jest': {
-      tsConfig: '<rootDir>/projects/dashboard/tsconfig.spec.json',
+      tsconfig: '<rootDir>/projects/dashboard/tsconfig.spec.json',
     },
   },
 };

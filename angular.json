@@ -20,7 +20,7 @@
             "outputPath": "dist/dashboard",
             "index": "projects/dashboard/src/index.html",
             "main": "projects/dashboard/src/main.ts",
-            "polyfills": "projects/dashboard/src/polyfills.ts",
+            "polyfills": ["projects/dashboard/src/polyfills.ts"],
             "tsConfig": "projects/dashboard/tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -83,7 +83,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "polyfills": "projects/dashboard/src/polyfills.ts",
+            "polyfills": ["projects/dashboard/src/polyfills.ts"],
             "tsConfig": "projects/dashboard/tsconfig.spec.json",
             "assets": [
               "projects/dashboard/src/favicon.ico",
