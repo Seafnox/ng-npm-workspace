@@ -100,24 +100,11 @@
           "options": {
             "tsConfig": [
               "projects/dashboard/tsconfig.app.json",
-              "projects/dashboard/tsconfig.spec.json",
-              "projects/dashboard/e2e/tsconfig.json"
+              "projects/dashboard/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/dashboard/e2e/protractor.conf.js",
-            "devServerTarget": "dashboard:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "dashboard:serve:production"
-            }
           }
         }
       }
